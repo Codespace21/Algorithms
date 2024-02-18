@@ -6,7 +6,7 @@
 
 Compara 2 elementos secuencialmente de la iteración y el elemento **mayor** lo desplaza hasta un elemento mayor que esté, para continuar el proceso en la misma iteracion.
 
-![bubble_diagram](../assets/diagrams/bubbleDiagram.png)
+![bubble_diagram](./assets/diagrams/bubbleDiagram.png)
 
 ### Selection
 
