@@ -1,10 +1,8 @@
 {
-  "eslintConfig": {
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"]
-        }
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"]
       }
     }
   },
@@ -23,7 +21,11 @@
       "error",
       "ignorePackages",
       {
-        "js": "never"
+        "js": "always",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never",
+        "json": "never"
       }
     ]
   }

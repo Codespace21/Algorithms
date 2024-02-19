@@ -12,6 +12,8 @@ Compara 2 elementos secuencialmente de la iteración y el elemento **mayor** lo 
 
 Identifica el **minino** de la iteración y lo cambia por el elemento **seleccionado**
 
+![bubble_diagram](./assets/diagrams/selectionDiagram.png)
+
 ### Insertion
 
 Toma el elemento de la iteración y compara hacia atras de su posición hasta encontrar un elemento mayor que este.

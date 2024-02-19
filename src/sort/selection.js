@@ -1,13 +1,14 @@
-import { arrayRandom } from './utils/randomArray.js';
+import randomArray from './utils/randomArray.js';
 
-const selectionSort = (array) => {
-  for (let i = 0; i < array.length - 1; i++) {
+const selectionSort = (inputArray) => {
+  const array = [...inputArray];
+  for (let i = 0; i < array.length - 1; i += 1) {
     const element = array[i];
     let minimum = element;
 
     let tempSwap = i;
 
-    for (let j = i + 1; j < array.length; j++) {
+    for (let j = i + 1; j < array.length; j += 1) {
       if (array[j] < minimum) {
         minimum = array[j];
         tempSwap = j;
@@ -20,7 +21,7 @@ const selectionSort = (array) => {
   return array;
 };
 
-arrayRandom(5, 99).then((array) => {
+randomArray(5, 9).then((array) => {
   console.time('Selection');
   const sortedArray = selectionSort(array);
   console.log(sortedArray);
